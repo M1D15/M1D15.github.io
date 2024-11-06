@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+button{
+    padding: 10px 15px;
+    background-color: rgb(15, 61, 169);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+
+/*Diseño navegador*/
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    min-width: 100%;
+    position: fixed;
+    font-size: 1.18rem;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 80%;
+}
+
+.nav-izq{
+    display: flex;
+    align-items: center;
+}
+
+#logo-nav{
+    height: 50px;
+}
+
+.nav-der{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+}
+
+.ver-divider{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+    width: 1px;
+}
+
+/*Diseño Hero Section*/
+.hero h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(hero-image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.hero-container2{
+    width: 50%;
+}
+
+.hero-container1{
+    color: white;
+    width: 50%;
+}
+
+/*Contenido Home*/
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 0%;
+    gap: 100px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 80%;
+    height: auto;
+    gap: 15px;
+}
+
+.texto-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.texto-contenido-alt{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.img-contenido, .img-contenido-alt{
+    width: 50%;
+    height: 350px;
+}
+
+.img-contenido img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.img-contenido-alt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.6);
+}
