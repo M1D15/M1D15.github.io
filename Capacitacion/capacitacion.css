@@ -1,0 +1,264 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif; /* Fuente igual que en CEE */
+    font-optical-sizing: auto;
+    font-weight: 400; /* Peso regular */
+    color: #000; /* Color negro estándar */
+}
+
+body {
+    background-color: rgb(241, 241, 241); /* Fondo uniforme */
+    font-size: 1rem; /* Tamaño base */
+    line-height: 1.6; /* Espaciado para texto */
+    color: #333; /* Color de texto estándar */
+}
+
+/* Títulos y Párrafos */
+h1, h2 {
+    color: #000; /* Negro más oscuro para títulos */
+    font-weight: 700; /* Peso fuerte */
+    margin-bottom: 20px; /* Espaciado uniforme */
+}
+
+p {
+    font-size: 1.1rem;
+    color: #333; /* Gris estándar para texto */
+    font-weight: 400;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+    position: fixed;
+    font-size: 1.18rem;
+    background-color: rgba(0, 0, 0, 1); /* Fondo negro */
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.nav-izq {
+    display: flex;
+    align-items: center;
+}
+
+#logo-nav {
+    height: 50px;
+    width: auto;
+}
+
+.nav-der {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Texto blanco */
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-link a:hover {
+    color: rgb(0, 0, 0); /* Texto negro al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco */
+    transition: 0.5s;
+}
+
+.ver-divider {
+    background-color: rgba(255, 255, 255, 0.5); /* Separador claro */
+    height: 30px;
+    width: 1px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* Altura completa */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../Imagenes/fondo-capacitacion.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    color: white; /* Texto blanco por defecto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700; /* Peso fuerte */
+    color: white; /* Asegura que el texto sea blanco */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para legibilidad */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 400; /* Peso regular */
+    color: rgba(255, 255, 255, 0.9); /* Texto blanco con opacidad ligera */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+/* Main Content */
+.content, .skills, .benefits {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px 0; /* Espaciado adicional */
+}
+
+.content-item, .skills-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center; /* Alineación vertical */
+}
+
+.content-item img {
+    width: 40%; /* Ajustar tamaño de imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.skill-item {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.skill-item img {
+    display: block; /* Asegura que las imágenes sean tratadas como bloques */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between; /* Separar columnas a los extremos */
+    align-items: flex-start; /* Alinear columnas en la parte superior */
+    background-color: black; /* Fondo negro */
+    padding: 20px 40px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    font-size: 1rem; /* Tamaño estándar del texto */
+}
+
+.foot-cont {
+    display: flex;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    justify-content: space-between; /* Distribuye las columnas a los extremos */
+}
+
+.foot-izq, .foot-der {
+    display: flex;
+    flex-direction: column; /* Contenido en columna */
+    gap: 5px; /* Espaciado entre líneas */
+}
+
+.foot-izq h1, .foot-der h1 {
+    margin-bottom: 10px; /* Espaciado debajo del título */
+    font-size: 1.2rem; /* Tamaño más grande para los títulos */
+    font-weight: 600; /* Negrita */
+    color: white; /* Cambia el color del título a blanco */
+
+}
+
+footer p, footer a {
+    color: white; /* Texto blanco */
+    font-size: 1rem; /* Texto de tamaño estándar */
+    text-decoration: none; /* Sin subrayado en enlaces */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+footer a:hover {
+    color: gray; /* Color gris al pasar el cursor */
+}
+
+
+.courses {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 150px; /* Altura fija para mantener consistencia */
+    object-fit: contain; /* Asegura que la imagen se acomode sin recortarse */
+    background-color: #f9f9f9; /* Fondo para las imágenes que no llenen el espacio */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+
+.course-info {
+    padding: 15px;
+}
+
+.course-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.course-info a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.course-info a:hover {
+    color: #0056b3;
+}
