@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciberseguridad</title>
-    <link rel="stylesheet" href="/CiberSeguridad/CiberS.css">
+    <link rel="stylesheet" href="CiberS.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
@@ -37,7 +37,6 @@
     <div class="hero-content">
         <h1>Ciberseguridad</h1>
         <p>Protege tus dispositivos y datos de las amenazas digitales</p>
-        <a href="#info" class="hero-btn">Saber Más</a>
     </div>
 </header>
 
@@ -56,17 +55,17 @@
             <h2>Ventajas de implementar ciberseguridad</h2>
             <div class="card-grid">
                 <div class="card">
-                    <img src="../Imagenes/seguridad-datos.jpg" alt="Seguridad de Datos">
+                    <img src="../Imagenes/seguridadDatos.webp" alt="Seguridad de Datos">
                     <h3>Protección de Datos</h3>
                     <p>Evita que tus datos sean robados o comprometidos por atacantes.</p>
                 </div>
                 <div class="card">
-                    <img src="../Imagenes/seguridad-redes.jpg" alt="Seguridad de Redes">
+                    <img src="../Imagenes/seguridadRedes.jpg" alt="Seguridad de Redes">
                     <h3>Seguridad en Redes</h3>
                     <p>Protege tu red contra accesos no autorizados y ataques externos.</p>
                 </div>
                 <div class="card">
-                    <img src="../Imagenes/seguridad-cloud.jpg" alt="Seguridad en la Nube">
+                    <img src="../Imagenes/seguridadNube.jpg" alt="Seguridad en la Nube">
                     <h3>Seguridad en la Nube</h3>
                     <p>Garantiza que tus datos almacenados en la nube estén seguros.</p>
                 </div>
@@ -74,20 +73,82 @@
         </section>
 
         <section class="features">
-            <h2>Herramientas Comunes</h2>
+            <h2>Tipos de amenazas cibernéticas</h2>
             <div class="features-grid">
                 <div class="feature-card">
+                    <img src="../Imagenes/phishing.png" alt="Seguridad de Datos">
+                    <div class="feature-content">
+                        <h3>Phishing</h3>
+                        <h4>Definición</h4>
+                        <p>Es un ataque en el que los ciberdelincuentes engañan a las personas para que revelen información confidencial, como contraseñas, datos bancarios o números de tarjetas de crédito, haciéndose pasar por una entidad confiable (por ejemplo, bancos, empresas o instituciones gubernamentales).</p>
+                        <h4>Consejos para prevenir</h4>
+                        <ul>
+                            <li>Verifica siempre la dirección del remitente del correo electrónico.</li>
+                            <li>No hagas clic en enlaces de correos sospechosos.</li>
+                            <li>Activa la autenticación de dos factores en tus cuentas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="../Imagenes/ransomware.jpg" alt="Seguridad de Datos">
+                    <div class="feature-content">
+                        <h3>Ransomware</h3>
+                        <h4>Definición</h4>
+                        <p>Es un tipo de malware que bloquea el acceso a los archivos o sistemas de una víctima mediante cifrado y exige un rescate (ransom) a cambio de restaurar el acceso.</p>
+                        <h4>Consejos para prevenir</h4>
+                        <ul>
+                            <li>Realiza copias de seguridad regulares de tus datos.</li>
+                            <li>Mantén tu software y sistema operativo actualizados.</li>
+                            <li>Instala un software antivirus confiable.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="../Imagenes/malware.png" alt="Seguridad de Datos">
+                    <div class="feature-content">
+                        <h3>Malware</h3>
+                        <h4>Definición</h4>
+                        <p>Es un software malicioso diseñado para infiltrarse, dañar o interrumpir sistemas informáticos sin el consentimiento del usuario.</p>
+                        <h4>Consejos para prevenir</h4>
+                        <ul>
+                            <li>Descarga software únicamente de fuentes confiables.</li>
+                            <li>No conectes dispositivos externos desconocidos a tu computadora.</li>
+                            <li>Configura un firewall en tu red.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="../Imagenes/ddos.jpg" alt="Seguridad de Datos">
+                    <div class="feature-content">
+                        <h3>Ataques de Denegación de Servicio (DDoS)</h3>
+                        <h4>Definición</h4>
+                        <p>Un ataque que sobrecarga un servidor, red o sistema con una gran cantidad de tráfico, haciéndolo inaccesible para los usuarios legítimos.</p>
+                        <h4>Consejos para prevenir</h4>
+                        <ul>
+                            <li>Implementa servicios de protección DDoS (como Cloudflare o AWS Shield).</li>
+                            <li>Monitorea el tráfico de tu red para detectar actividades sospechosas.</li>
+                            <li>Configura políticas de bloqueo para limitar accesos no autorizados.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <h2>Herramientas Comunes</h2>
+            <div class="card-grid">
+                <div class="card">
                     <img src="../Imagenes/vpn.png" alt="VPN">
                     <h3>VPN</h3>
                     <p>Encripta tus datos y protege tu privacidad en línea.</p>
                 </div>
-                <div class="feature-card">
-                    <img src="../Imagenes/ids.png" alt="IDS">
+                <div class="card">
+                    <img src="../Imagenes/ids.webp" alt="IDS">
                     <h3>Detección de Intrusos</h3>
                     <p>Detecta y responde a posibles violaciones de seguridad.</p>
                 </div>
-                <div class="feature-card">
-                    <img src="../Imagenes/monitor.png" alt="Monitoreo">
+                <div class="card">
+                    <img src="../Imagenes/monitoreo.png" alt="Monitoreo">
                     <h3>Monitoreo</h3>
                     <p>Supervisa continuamente la actividad de tu sistema para detectar anomalías.</p>
                 </div>
@@ -95,8 +156,9 @@
         </section>
 
         <section class="cta">
-            <h2>Empieza Hoy</h2>
-            <p>Invierte en ciberseguridad para garantizar la protección de tus activos digitales.</p>
+            <h2>Contenido adicional</h2>
+            <p>Para obtener más información sobre ciberseguridad, puedes consultar el siguiente articulo:</p>
+            <br>
             <a href="https://www.zendesk.com.mx/blog/que-es-seguridad-de-informacion/" target="_blank" class="cta-btn">Leer Más</a>
         </section>
     </main>
@@ -107,7 +169,9 @@
         <div class="foot-cont">
             <div class="foot-izq">
                 <h1>&#174; Derechos reservados</h1>
-                <p>Arturo Pérez González - 215510<br>Manuel Ivan Silva Contreras - 214826</p>
+                <p>Arturo Pérez González - 215510
+                    <br>Manuel Ivan Silva Contreras - 214826
+                    <br>Alan Reynaldo Robles Soto - 214723</p>
             </div>
             <div class="foot-der">
                 <h1>Recursos</h1>
