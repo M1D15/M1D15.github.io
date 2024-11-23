@@ -275,11 +275,19 @@ footer a:hover {
 }
 
 /* Features Section */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.features {
+    width: 80%; /* Asegura que la sección tenga el mismo ancho */
+    margin: 40px auto; /* Centrado con espacio superior e inferior */
 }
+
+.features-grid {
+    display: grid; /* Usa diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles */
+    gap: 20px; /* Espaciado uniforme entre tarjetas */
+    width: 80%; /* Asegura el mismo ancho que las demás secciones */
+    margin: 0 auto; /* Centra la cuadrícula */
+}
+
 
 .feature-card {
     background-color: white;
@@ -290,9 +298,11 @@ footer a:hover {
 }
 
 .feature-card img {
-    width: 80px;
-    margin-bottom: 10px;
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
 }
+
 
 /* CTA */
 .cta {
