@@ -18,25 +18,34 @@ body {
 
 /* Títulos y Párrafos */
 h1, h2 {
-    color: #000; /* Negro más oscuro para títulos */
-    font-weight: 700; /* Peso fuerte */
-    margin-bottom: 20px; /* Espaciado uniforme */
+    font-size: 2.3rem; /* Tamaño del título principal */
+    color: #000; /* Color negro para el texto */
+    font-weight: 700; /* Negrita para destacar */
+    text-align: center; /* Alinea el texto al centro */
 }
 
 h3 {
     color: #000; /* Negro más oscuro para títulos */
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 10px; /* Espaciado uniforme */
 }
 
 h4 {
     color: #000; /* Negro más oscuro para títulos */
+    font-size: 1.5rem;
     font-weight: 700; /* Peso fuerte */
-    margin-bottom: 5px; /* Espaciado uniforme */
+    margin: 10px 0; /* Espaciado uniforme */
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    color: #333; /* Gris estándar para texto */
+    font-weight: 400;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+li {
+    font-size: 1.2rem;
     color: #333; /* Gris estándar para texto */
     font-weight: 400;
     line-height: 1.6; /* Espaciado entre líneas */
@@ -136,10 +145,12 @@ nav {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    align-items: center; /* Alineación vertical */
 }
 
 .content-item img {
-    width: 50%;
+    width: 500px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -208,6 +219,43 @@ nav {
 
 .feature-content {
     text-align: left;
+}
+
+.feature-content ul {
+    padding-left: 20px;
+}
+
+/* Sección de contraseñas seguras */
+.buenas-practicas {
+    margin: 40px auto;
+    width: 90%;
+}
+
+.buenas-practicas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.practicas-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.practicas-content {
+    flex: 1;
+    text-align: left;
+}
+
+.practicas-content ul {
+    padding-left: 20px;
+}
+
+.practicas-content ul ul {
+    padding-left: 20px;
 }
 
 /* CTA */
