@@ -94,6 +94,8 @@ nav {
 .hero {
     height: 100vh; /* Altura completa */
     color: white; /* Texto blanco por defecto */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Imagenes/fondo-capacitacion.jpg') center/cover no-repeat;
+    /*Cambiar la imagen de fondo a la que corresponda*/
     display: flex;
     flex-direction: column;
     justify-content: center;
