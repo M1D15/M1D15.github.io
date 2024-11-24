@@ -10,10 +10,14 @@
 }
 
 body {
-    background-color: rgb(241, 241, 241); /* Fondo uniforme */
+    background-color: rgb(242, 242, 242); /* Fondo uniforme */
     font-size: 1rem; /* Tamaño base */
     line-height: 1.6; /* Espaciado para texto */
     color: #333; /* Color de texto estándar */
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Títulos y Párrafos */
@@ -89,8 +93,6 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh; /* Altura completa */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../Imagenes/fondo-capacitacion.jpg') no-repeat center center/cover; /* Imagen de fondo */
     color: white; /* Texto blanco por defecto */
     display: flex;
     flex-direction: column;
@@ -98,6 +100,13 @@ nav {
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+
+.hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
 }
 
 .hero h1 {
@@ -112,6 +121,18 @@ nav {
     font-weight: 400; /* Peso regular */
     color: rgba(255, 255, 255, 0.9); /* Texto blanco con opacidad ligera */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #0078d7;
 }
 
 /* Main Content */
@@ -143,9 +164,6 @@ nav {
     width: 100px; /* Ajusta el tamaño según tus necesidades */
     height: auto; /* Mantén la proporción de la imagen */
 }
-
-
-
 
 /* Footer */
 footer {
@@ -190,41 +208,6 @@ footer p, footer a {
 .links-foot:hover {
     color: gray; /* Cambiar color al pasar el cursor */
     transition: 300ms;
-}
-
-/* Hero Section */
-.hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Imagenes/seguridad-hero.jpg') center/cover no-repeat;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-.hero-btn {
-    padding: 10px 20px;
-    background-color: #0056b3;
-    color: white;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.hero-btn:hover {
-    background-color: #0078d7;
 }
 
 /* Content Section */

@@ -10,10 +10,14 @@
 }
 
 body {
-    background-color: rgb(241, 241, 241); /* Fondo uniforme */
+    background-color: rgb(242, 242, 242); /* Fondo uniforme */
     font-size: 1rem; /* Tamaño base */
     line-height: 1.6; /* Espaciado para texto */
     color: #333; /* Color de texto estándar */
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Títulos y Párrafos */
