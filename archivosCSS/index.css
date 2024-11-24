@@ -102,7 +102,7 @@ nav {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imagenes/hero-image.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Imagenes/hero-image.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -164,19 +164,19 @@ nav {
 }
 
 #img-infosec {
-    background: url('../imagenes/infosec.jpg') no-repeat;
+    background: url('Imagenes/infosec.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #img-cib {
-    background: url('../imagenes/ciberseg.jpeg') no-repeat;
+    background: url('Imagenes/ciberseg.jpeg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #img-cap {
-    background: url('../imagenes/capacitacion.jpg') no-repeat;
+    background: url('Imagenes/capacitacion.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -222,4 +222,5 @@ footer p, footer a {
 
 .links-foot:hover {
     color: gray; /* Cambiar color al pasar el cursor */
+    transition: 300ms;
 }

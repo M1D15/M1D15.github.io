@@ -279,46 +279,49 @@ nav {
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between; /* Separar columnas a los extremos */
-    align-items: flex-start; /* Alinear columnas en la parte superior */
+    justify-content: center;
+    align-items: center;
     background-color: black; /* Fondo negro */
-    padding: 20px 40px; /* Espaciado interno */
+    padding: 20px 0;
+    width: 100%;
     color: white; /* Texto blanco */
-    width: 100%; /* Ocupa todo el ancho */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
-    font-size: 1rem; /* Tamaño estándar del texto */
+    position: relative; /* Asegura que no desaparezca */
+    z-index: 1000; /* Mantén el footer en la capa superior */
 }
 
 .foot-cont {
+    width: 80%;
     display: flex;
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    justify-content: space-between; /* Distribuye las columnas a los extremos */
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .foot-izq, .foot-der {
     display: flex;
-    flex-direction: column; /* Contenido en columna */
-    gap: 5px; /* Espaciado entre líneas */
+    flex-direction: column;
+    gap: 10px;
 }
 
-.foot-izq h1, .foot-der h1 {
-    margin-bottom: 10px; /* Espaciado debajo del título */
-    font-size: 1.2rem; /* Tamaño más grande para los títulos */
-    font-weight: 600; /* Negrita */
-    color: white; /* Cambia el color del título a blanco */
-
+footer h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: white;
+    text-align: start;
 }
 
 footer p, footer a {
+    font-size: 1rem;
     color: white; /* Texto blanco */
-    font-size: 1rem; /* Texto de tamaño estándar */
-    text-decoration: none; /* Sin subrayado en enlaces */
-    line-height: 1.5; /* Espaciado entre líneas */
+    text-decoration: none;
+    line-height: 1.5;
 }
 
-footer a:hover {
-    color: gray; /* Color gris al pasar el cursor */
+.links-foot:hover {
+    color: gray; /* Cambiar color al pasar el cursor */
+    transition: 300ms;
 }
+
 /* Sección principal: Casos Reales */
 .real-cases {
     width: 80%; /* Ocupa el 80% del ancho de la página */
