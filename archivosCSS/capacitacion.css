@@ -24,7 +24,7 @@ h1, h2 {
     margin-bottom: 20px; /* Espaciado uniforme */
 }
 
-p {
+p, li {
     font-size: 1.1rem;
     color: #333; /* Gris estándar para texto */
     font-weight: 400;
@@ -116,7 +116,7 @@ nav {
 }
 
 /* Main Content */
-.content, .skills, .benefits {
+.content, .skills, .benefits, .importancia {
     width: 80%;
     margin: 30px auto;
     padding: 20px 0; /* Espaciado adicional */
@@ -145,8 +145,25 @@ nav {
     height: auto; /* Mantén la proporción de la imagen */
 }
 
+.importancia-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.impor-info-intro{
+    width: 60%;
+}
 
+.impor-img{
+    width: 40%;
+}
+
+.impor-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 /* Footer */
 footer {
