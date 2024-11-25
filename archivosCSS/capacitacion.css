@@ -281,3 +281,167 @@ footer p, footer a {
 .course-info a:hover {
     color: #0056b3;
 }
+
+/* FAQ Section */
+.faq {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.faq h2 {
+    text-align: center; /* Centrado */
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 30px;
+    color: #003366; /* Azul oscuro */
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 20px; /* Espaciado entre preguntas */
+    border-bottom: 1px solid #ddd; /* Línea divisoria suave */
+    padding-bottom: 10px;
+}
+
+/* Preguntas */
+.faq-item label {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #333; /* Gris oscuro */
+    font-weight: bold;
+    display: block;
+    cursor: pointer; /* Cursor de mano para interacción */
+    transition: color 0.3s ease;
+}
+
+.faq-item label:hover {
+    color: #0056b3; /* Azul más intenso al pasar el cursor */
+}
+
+/* Respuestas */
+.faq-item p {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555; /* Gris estándar */
+    line-height: 1.6; /* Espaciado entre líneas */
+    display: none; /* Ocultar por defecto */
+    margin-top: 10px;
+}
+
+/* Mostrar respuestas con checkbox */
+.faq-item input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox */
+}
+
+.faq-item input[type="checkbox"]:checked + p {
+    display: block; /* Mostrar respuesta si está seleccionada */
+}
+
+/* Tutorial General */
+.tutorial {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Cada paso */
+.tutorial-step {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0056b3;
+    display: block;
+}
+
+/* Títulos de cada paso */
+.tutorial-step h3 {
+    padding-left: 140px; /* Espacio para el óvalo decorativo */
+    position: relative;
+    font-size: 1.8rem;
+    color: #003366;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre óvalo y texto */
+}
+
+/* Óvalo decorativo para "Paso X" */
+.tutorial-step h3::before {
+    content: attr(data-step); /* Agrega el número del paso */
+    position: absolute;
+    left: 10px; /* Ajusta la posición del óvalo */
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #0056b3;
+    border-radius: 20px; /* Forma de óvalo */
+    padding: 10px 25px; /* Más espacio interno */
+    text-align: center;
+    white-space: nowrap; /* Evita saltos de línea */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para efecto visual */
+}
+
+/* Línea decorativa debajo del título */
+.tutorial-step h3::after {
+    content: ""; /* Línea decorativa */
+    display: block;
+    flex-grow: 1; /* Extiende la línea hacia la derecha */
+    height: 2px;
+    background-color: #d3d3d3; /* Gris claro */
+    margin-left: 20px; /* Espacio entre el texto y la línea */
+}
+
+/* Contenido principal */
+.tutorial-content {
+    margin-left: 20px;
+    display: block;
+    padding: 10px 0;
+}
+
+.tutorial-content .main-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tutorial-content .secondary-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    padding-left: 10px;
+    border-left: 3px solid #0056b3; /* Estilo visual para separar texto secundario */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .tutorial-step h3 {
+        padding-left: 90px; /* Reduce espacio para pantallas pequeñas */
+    }
+
+    .tutorial-step h3::before {
+        font-size: 1.2rem;
+        padding: 8px 20px; /* Ajusta tamaño del óvalo */
+    }
+
+    .tutorial-step h3::after {
+        margin-left: 10px; /* Ajusta separación de la línea */
+    }
+}
+
