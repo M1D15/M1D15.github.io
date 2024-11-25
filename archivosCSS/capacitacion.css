@@ -18,6 +18,7 @@ body {
 
 /* Títulos y Párrafos */
 h1, h2 {
+    font-size: 2.3rem;
     color: #000; /* Negro más oscuro para títulos */
     font-weight: 700; /* Peso fuerte */
     margin-bottom: 20px; /* Espaciado uniforme */
